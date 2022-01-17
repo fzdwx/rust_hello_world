@@ -1,5 +1,4 @@
 fn main() {
-    let counter = Counter::create(10);
 
     let sum: u32 = Counter::create(10).zip(Counter::create(10).skip(1))
         .map(|(a, b)| a * b)
