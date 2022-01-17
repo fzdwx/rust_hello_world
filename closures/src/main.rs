@@ -12,7 +12,7 @@ struct Counter {
 }
 
 impl Iterator for Counter {
-    type Item = (u32);
+    type Item = u32;
 
     fn next(&mut self) -> Option<Self::Item> {
         self.count -= 1;
