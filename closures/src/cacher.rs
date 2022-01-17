@@ -37,7 +37,7 @@ impl<T: Fn(u32) -> u32> Cacher<T> {
                 v
             }
             Some(v) => {
-                v.clone()
+                *v
             }
         }
     }
